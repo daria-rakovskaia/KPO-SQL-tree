@@ -1,0 +1,41 @@
+﻿<Window x:Class="treeLab.AddCountry"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:treeLab"
+        mc:Ignorable="d"
+        Title="Добавление страны" Height="200" Width="300"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize">
+    <Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.7*"/>
+                <RowDefinition Height="0.3*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Label 
+                    Content="Название страны"
+                    Margin="5 15"
+                />
+                <TextBox
+                    x:Name="country"
+                    Width="270"
+                    Height="30"
+                    Background="WhiteSmoke"
+                />
+            </Grid>
+            <Grid Grid.Row="1">
+                <Button
+                    x:Name="add"
+                    Height="30"
+                    Width="100"
+                    Background="PaleGreen"
+                    Content="Добавить" 
+                    Click="add_Click"
+                />
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>

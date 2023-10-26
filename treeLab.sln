@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "treeLab", "treeLab\treeLab.csproj", "{A8494451-0FA8-4982-8E9E-205385C7AC6C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5273FD44-0959-49E7-8C7C-B27D9607E181}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A8494451-0FA8-4982-8E9E-205385C7AC6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8494451-0FA8-4982-8E9E-205385C7AC6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8494451-0FA8-4982-8E9E-205385C7AC6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8494451-0FA8-4982-8E9E-205385C7AC6C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2C189124-4375-4FA5-8BF8-B08326B5246C}
+	EndGlobalSection
+EndGlobal

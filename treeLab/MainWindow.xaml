@@ -1,0 +1,44 @@
+﻿<Window x:Class="treeLab.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:treeLab"
+        mc:Ignorable="d"
+        Title="MyTree" Height="700" Width="700"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.9*"/>
+            <RowDefinition Height="0.1*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <TreeView x:Name="tree" 
+                      FontSize="16"
+                      AllowDrop="True"
+                      SelectedItemChanged="tree_SelectedItemChanged"
+            >
+                <TreeView.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem x:Name="delete" Header="Удалить" IsEnabled="False" Click="delete_Click"/>
+                        <MenuItem x:Name="add" Header="Добавить" IsEnabled="False" Click="add_Click"/>
+                        <MenuItem x:Name="edit" Header="Изменить" IsEnabled="False" Click="edit_Click"/>
+                    </ContextMenu>
+                </TreeView.ContextMenu>
+            </TreeView>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Button
+                x:Name="addCountry"
+                HorizontalAlignment="Left"
+                Width="200"
+                Height="40"
+                Margin="20 0"
+                Background="CornflowerBlue"
+                Content="Добавить страну"
+                FontSize="16" 
+                Click="addCountry_Click"
+            />
+        </Grid>
+    </Grid>
+</Window>

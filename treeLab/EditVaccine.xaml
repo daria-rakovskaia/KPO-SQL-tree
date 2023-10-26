@@ -1,0 +1,56 @@
+﻿<Window x:Class="treeLab.EditVaccine"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:treeLab"
+        mc:Ignorable="d"
+        Title="Изменение вакцины" Height="300" Width="700"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize">
+    <Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.4*"/>
+                <RowDefinition Height="0.4*"/>
+                <RowDefinition Height="0.2*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Label
+                    Content="Название производителя"
+                    VerticalAlignment="Top" 
+                    Margin="5 25 0 0"
+                />
+                <ComboBox
+                    x:Name="makers"
+                    Height="30"
+                    Width="670"
+                    Margin="10 30 0 0"
+                    HorizontalAlignment="Left"
+                />
+            </Grid>
+            <Grid Grid.Row="1">
+                <Label
+                    Content="Название вакцины"
+                    Margin="5 10"
+                />
+                <TextBox
+                    x:Name="vaccine"
+                    Height="30"
+                    Width="670"
+                    Background="WhiteSmoke"
+                />
+            </Grid>
+            <Grid Grid.Row="2">
+                <Button
+                    x:Name="edit"
+                    Width="100"
+                    Height="30"
+                    Background="PaleGreen"
+                    Content="Изменить"
+                    Click="edit_Click"
+                />
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>
